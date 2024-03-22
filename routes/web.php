@@ -38,3 +38,14 @@ Route::post('/cpanel/new', 'cpanelController@cpanelinputpost');
 Route::post('/cpanel/delete', 'cpanelController@cpaneldelete');
 Route::get('/cpanel/detail/{id}', 'cpanelController@cpanelview');
 Route::post('/cpanel/detail/{id}', 'cpanelController@cpanelupdate');
+
+// Routes Users
+Route::get('/users', 'UserController@index')->name('user');
+Route::get('/users/new', 'UserController@input');
+Route::post('/users/new', 'UserController@inputpost');
+Route::post('/users/delete', 'UserController@delete');
+Route::get('/users/detail/{id}', 'UserController@view');
+Route::post('/users/detail/{id}', 'UserController@update');
+
+// Routes Roles
+Route::get('/roles', 'UserController@index')->name('role');

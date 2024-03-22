@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel='stylesheet' href='//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
         @yield('css')
         <style type="text/css">
             /* Custom Scrollbar */
@@ -47,6 +48,8 @@
                         <a href="{{ route('shell') }}" class="p-3 text-decoration-none text-light"><i class="fa fa-code fa-fw"></i> SHELL</a>
                         <a href="{{ route('vps') }}" class="p-3 text-decoration-none text-light"><i class="fa fa-cloud fa-fw"></i> VPS</a>
                         <a href="{{ route('cpanel') }}" class="p-3 text-decoration-none text-light"><i class="fa fa-desktop fa-fw"></i> CPANEL</a>
+                        <a href="{{ route('user') }}" class="p-3 text-decoration-none text-light"><i class="fa fa-users fa-fw"></i> USERS</a>
+                        {{-- <a href="{{ route('role') }}" class="p-3 text-decoration-none text-light"><i class="fa fa-gears fa-fw"></i> ROLES</a> --}}
                     </div>
                 </div>
             </nav>
@@ -66,6 +69,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
     @yield('js')
     </body>
 </html>
