@@ -19,6 +19,8 @@ class CreateShell extends Migration
             $table->string('domain');
             $table->string('server_info');
             $table->enum('status', ['active', 'inactive'])->default('inactive');
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }
